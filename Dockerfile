@@ -1,4 +1,4 @@
-LABEL MANTAINER=Marcello Percoco
+LABEL MANTAINER="Marcello Percoco <marcello.percoco@yahoo.com>"
 
 FROM alpine
 
