@@ -1,5 +1,3 @@
-LABEL MANTAINER="Marcello Percoco <marcello.percoco@yahoo.com>"
-
 FROM alpine
 
 RUN apk update \
