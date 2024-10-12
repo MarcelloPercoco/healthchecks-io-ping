@@ -6,7 +6,10 @@ env:
   REPO_NAME: ${{ vars.REPO_NAME }}
   ALPINE_VERSION: ${{ vars.ALPINE_VERSION }}
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+    - '*'
 
 jobs: # job name 
   build-deploy: 
