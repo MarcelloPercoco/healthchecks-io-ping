@@ -1,4 +1,4 @@
-name: Manual-build  # When pushing to any branch then run this action
+name: Push-build  # When pushing to any branch then run this action
 # Env variable
 env:
   DOCKER_USER: ${{ vars.DOCKERHUB_USERNAME }}
@@ -34,7 +34,7 @@ jobs: # job name
         uses: docker/build-push-action@v6
         with:
           build-args: |
-            ALPINE_VERSION=${{ ALPINE_VERSION }}
+            ALPINE_VERSION=${{ env.ALPINE_VERSION }}
           tags: ${{ env.REPO_NAME }}:latest
           platforms: linux/arm/v7,linux/arm64,linux/amd64
           push: true
